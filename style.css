@@ -1,0 +1,480 @@
+@font-face {
+    font-family: SF;
+    src: url(./Fonts/SFPRODISPLAYMEDIUM.OTF);
+}
+@font-face {
+    font-family: SR;
+    src: url(./Fonts/SFPRODISPLAYREGULAR.OTF);
+}
+
+@font-face {
+    font-family: PR;
+    src: url(./Fonts/ppneuemontreal-medium.otf);
+}
+
+@font-face {
+    font-family: DR;
+    src: url(./Fonts/Denton\ Test\ Regular\ 400.otf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    overflow: hidden;
+}
+
+#page1{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#page1 h4{
+    width: fit-content;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+    border-radius: 8px;
+    padding: 0.8vw 2vw;
+    border-radius: 10px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: linear-gradient(95deg, #047AFF 15.65%, #7917DF 48.71%);
+    box-shadow: 0px 4px 14px 0px rgba(143, 61, 224, 0.20) inset;
+    background: var(--Purple-gradient, linear-gradient(95deg, #047AFF 15.65%, #7917DF 48.71%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#page1 h1{
+    font-size: 70px;
+    font-weight: 500;
+    text-align: center;
+    font-family: PR;
+}
+
+#page1 h1 span{
+    background: var(--Purple-gradient, linear-gradient(95deg, #047AFF 15.65%, #7917DF 48.71%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+    font-family: DR;
+    font-size: 60px;
+}
+
+#page1 p{
+    text-align: center;
+    color: #656565;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#page1 a{
+    text-decoration: none;
+    border: none;
+    padding: 25px 50px;
+    border-radius: 100px;
+    font-size: 18px;
+    text-align: center;
+    background: linear-gradient(95deg, rgba(4, 122, 255, 0.20) 15.65%, rgba(121, 23, 223, 0.20) 48.71%);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: SF;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 100;
+}
+
+
+#page1 svg{
+    position: absolute;
+    top: 0;
+    left: 20%;
+}
+
+
+#page2{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+#page2 svg{
+    flex-shrink: 0;
+    width: 180%;
+    height: 180%;
+}
+
+#page2 #elice{
+    position: absolute;
+    top: 30%;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+
+#page2 #elice img{
+    width: 100%;
+    /* transform: rotate(-45deg); */
+}
+
+
+#page3{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    gap: 80px;
+    padding: 0 2vw;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#page3 #left{
+    width: 500px;
+    height: 500px;
+    border: 2px solid #EAECF0;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#page3 #left #line{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#page3 #left #line #vertical{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#page3 #left #line #hori{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#page3 svg{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+
+#page3 #left #center{
+    width: 350px;
+    height: 300px;
+    border-radius: 30px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 53.56%, rgba(255, 255, 255, 0.00) 100%);box-shadow: 0px -32px 32px 0px rgba(2, 37, 62, 0.04);
+    backdrop-filter: blur(50px);
+}
+
+#page3 #left #center svg{
+    width: 5px;
+    height: 5px;
+}
+
+#page3 #left #center #det{
+    padding: 5px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+#page3 #left #center #second{
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 300px;
+    height: 250px;
+    background-color: rgba(202, 196, 196, 0.336);
+    border-radius: 30px;
+    position: relative;
+}
+
+#page3 #left #center #second #second-button{
+    position: absolute;
+    bottom: -15%;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.20);
+    filter: drop-shadow(0px 24px 48px rgba(2, 37, 62, 0.08));backdrop-filter: blur(4px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+#page3 #left #center #second #second-button #outer-circle{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.40);;
+    filter: drop-shadow(0px 24px 48px rgba(2, 37, 62, 0.08));backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page3 #left #center #second #second-button #outer-circle #inner-circle{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(91deg, #047AFF 0.9%, #7917DF 116.55%);
+    backdrop-filter: blur(5.560588359832764px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page3 #right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    flex-shrink: 0;
+}
+
+#page3 #right h1{
+    font-size: 100px;
+    font-weight: 500;
+    font-family: PR;
+    width: 90%;
+}
+
+#page3 #right h1 span{
+    background: var(--Purple-gradient, linear-gradient(95deg, #047AFF 15.65%, #7917DF 50%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+    font-family: DR;
+}
+
+#page3 #right ul li{
+    margin-top: 20px;
+}
+
+#page3 #right p{
+    font-family: SR;
+    font-size: 25px;
+    font-weight: 400;
+    color: #3E3E3E;
+    line-height: 30px;
+    width: 90%;
+}
+
+#page4{
+    width: 100vw;
+    height: 80vh;
+    padding: 50px 150px;
+}
+
+#page4 #details{
+    width: 100%;
+}
+#page4 #upper_details{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #E7E7E7;;
+}
+#page4 #footer_left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#page4 #company{
+    display: flex;
+    gap: 20px;
+}
+
+#page4 #upper_details h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    opacity: 0.8;
+    font-family: SF;
+}
+#page4 #social{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+}
+#page4 svg{
+    width: 100px;
+    cursor: pointer;
+}
+
+#page4 #footer_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+#page4 #footer_right a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+    text-align: right;
+    align-self: stretch;
+    font-family: SF;
+}
+
+#page4 #text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+#page4 #text h4{
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+    opacity: 0.5;
+    font-family: PR;
+}
+#page4 #text a{
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+    opacity: 0.5;
+    text-decoration: none;
+    font-family: PR;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #page1{
+        height: 50%;
+        margin-top: 100px;
+    }
+    #page2{
+        height: 50%;
+    }
+    #page2 #elice{
+        top:30%;
+        width: 50%;
+        height: 50%;
+    }
+    #page3{
+        width: 100%;
+        height: 50%;
+        flex-direction: column;
+        padding: 10vh 5vw;
+    }
+    #page3 #right{
+        padding: 0 15vw;
+    }
+    #page3 #right h1{
+        font-size: 70px;
+        width: 100%;
+    }
+    #page4{
+        height: 50%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    #page1{
+        margin-top: 50px;
+    }
+    #page1 h1{
+        font-size: 40px;
+    }
+    #page2{
+        height: 50%;
+    }
+    #page2 #elice{
+        top:30%;
+        width: 40%;
+        height: 40%;
+    }
+    #page3{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        padding: 10vh 5vw;
+    }
+    #page3 #left{
+        width: 100%;
+        height: 400px;
+    }
+    #page3 #left #center{
+        width: 90%;
+        height: 60%;
+    }
+    #page3 #left #center #second{
+        width: 80%;
+        height: 100%;
+    }
+    #page3 #right{
+        padding: 0 15vw;
+    }
+    #page3 #right h1{
+        font-size: 50px;
+        width: 100%;
+    }
+    #page4{
+        width: 100%;
+        height: 150%;
+        padding:0 10vw;
+    }
+    #page4 #upper_details{
+        flex-direction: column;
+    }
+    #page4 #footer_right a{
+        text-align: left;
+    }
+    #page4 #text{
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    #page4 #text h4{
+        font-size: 15px;
+    }
+    #page4 #text a{
+        font-size: 15px;
+    }
+}
+  
