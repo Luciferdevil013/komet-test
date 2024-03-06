@@ -67,7 +67,7 @@ html,body{
     width: fit-content;
     text-transform: uppercase;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 500;
     border-radius: 8px;
     padding: 0.8vw 2vw;
     border-radius: 10px;
@@ -95,7 +95,7 @@ html,body{
 }
 
 #page1 h1 span{
-    background: var(--Purple-gradient, linear-gradient(95deg, #047AFF 15%, #7917DF 48%));
+    background: var(--Purple-gradient, linear-gradient(-95deg, #047AFF 15%, #7917DF 85%));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -481,7 +481,7 @@ html,body{
 }
 
 #page3 #right h1 span{
-    background: var(--Purple-gradient, linear-gradient(95deg, #047AFF 15.65%, #7917DF 50%));
+    background: var(--Purple-gradient, linear-gradient(95deg, #047AFF 64.2%, #7917DF 35.8%));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
