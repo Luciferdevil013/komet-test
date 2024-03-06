@@ -95,7 +95,7 @@ html,body{
 }
 
 #page1 h1 span{
-    background: var(--Purple-gradient, linear-gradient(-95deg, #047AFF 15%, #7917DF 85%));
+    background:linear-gradient(95deg, #7917DF 48.71%, #047AFF 15.65%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
