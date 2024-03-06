@@ -101,10 +101,6 @@ html,body{
     -webkit-text-fill-color: transparent;
     font-style: italic;
     font-family: DR;
-    font-size: 72px;
-    font-weight: 500;
-    letter-spacing: -2px;
-    line-height: 100%;
 }
 
 #page1 p{
