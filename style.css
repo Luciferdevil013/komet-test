@@ -101,6 +101,7 @@ html,body{
     -webkit-text-fill-color: transparent;
     font-style: italic;
     font-family: DR;
+    letter-spacing: -2px;
 }
 
 #page1 p{
@@ -483,6 +484,7 @@ html,body{
     -webkit-text-fill-color: transparent;
     font-style: italic;
     font-family: DR;
+    letter-spacing: -2px;
 }
 
 #page3 #right ul li{
